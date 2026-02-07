@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gardens - Premium gardening boxes and expert advice for beginners and enthusiasts across Europe, Asia, and New Zealand">
+    <title>Gardens - Cultivating Beauty, One Garden at a Time</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/favicon.ico" sizes="any">
+<link rel="icon" href="favicon.png" type="image/png">
+
+
+</head>
+<body class="home-page">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#2C4A3E"/>
+                    <path d="M12 28V20L16 16L20 20L24 16L28 20V28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="16" cy="14" r="2" fill="white"/>
+                    <circle cx="24" cy="14" r="2" fill="white"/>
+                </svg>
+                <span class="logo-text">Gardens</span>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="products.html" class="nav-link">Boxes</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link btn-login">Log In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Let Your Garden Shine Bright</h1>
+            <p class="hero-subtitle">Cultivating beauty with a personal touch, one garden at a time</p>
+            <button class="btn btn-primary" onclick="scrollToSection('boxes')">
+                Explore Our Boxes
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Boxes Section -->
+    <section id="boxes" class="boxes-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Curated Collections</span>
+                <h2 class="section-title">Grow with Us</h2>
+            </div>
+            <div class="boxes-grid">
+                <article class="box-card">
+                    <div class="box-card-header">
+                        <span class="box-number">01</span>
+                        <span class="box-badge">Weekly</span>
+                    </div>
+                    <h3 class="box-card-title">Oddbox</h3>
+                    <p class="box-card-price"><span class="currency">£</span>18<span class="period">/week</span></p>
+                    <p class="box-card-description">Wonky vegetables rejected by supermarkets, delivered weekly with vegetable seeds and growing tips via our blog.</p>
+                    <ul class="box-features">
+                        <li>✓ Weekly deliveries</li>
+                        <li>✓ Wonky vegetables</li>
+                        <li>✓ Free vegetable seeds</li>
+                        <li>✓ Growing blog access</li>
+                    </ul>
+                    <a href="products.html#oddbox" class="btn btn-outline">Discover Oddbox</a>
+                </article>
+
+                <article class="box-card featured">
+                    <div class="best-value-badge">Best Value</div>
+                    <div class="box-card-header">
+                        <span class="box-number">02</span>
+                        <span class="box-badge">Quarterly</span>
+                    </div>
+                    <h3 class="box-card-title">Flourish</h3>
+                    <p class="box-card-price"><span class="currency">£</span>62<span class="period">/quarter</span></p>
+                    <p class="box-card-description">Four seasonal boxes a year with seeds, seed trays, watering can, and handmade cruelty-free soap for the conscious gardener.</p>
+                    <ul class="box-features">
+                        <li>✓ Four boxes yearly</li>
+                        <li>✓ Seeds with trays</li>
+                        <li>✓ Watering can included</li>
+                        <li>✓ Cruelty-free soap</li>
+                    </ul>
+                    <a href="products.html#flourish" class="btn btn-primary">Choose Flourish</a>
+                </article>
+
+                <article class="box-card">
+                    <div class="box-card-header">
+                        <span class="box-number">03</span>
+                        <span class="box-badge">Monthly</span>
+                    </div>
+                    <h3 class="box-card-title">Cottage</h3>
+                    <p class="box-card-price"><span class="currency">£</span>35<span class="period">/month</span></p>
+                    <p class="box-card-description">Monthly wildflower seeds with fact cards, seed markers, and twine - perfect for cottage garden enthusiasts.</p>
+                    <ul class="box-features">
+                        <li>✓ Monthly deliveries</li>
+                        <li>✓ Wild flower seeds</li>
+                        <li>✓ Educational fact cards</li>
+                        <li>✓ Garden markers & twine</li>
+                    </ul>
+                    <a href="products.html#cottage" class="btn btn-outline">Explore Cottage</a>
+                </article>
+            </div>
+            <div class="boxes-footer">
+                <p>Need something specific? <a href="contact.html" class="link-accent">Contact us</a> for custom corporate subscriptions and gift boxes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Showcase -->
+    <section class="services-showcase">
+        <div class="services-background"></div>
+        <div class="container">
+            <div class="services-content">
+                <div class="services-text">
+                    <span class="section-label light">What We Offer</span>
+                    <h2 class="section-title light">Expert Gardening Resources</h2>
+                    <p class="services-description">From monthly checklists to greenhouse tips, we provide comprehensive guidance for every stage of your gardening journey.</p>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <div class="service-icon">🌱</div>
+                            <div class="service-info">
+                                <h4>Monthly Gardening Checklist</h4>
+                                <p>Stay on track with seasonal tasks</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">🏡</div>
+                            <div class="service-info">
+                                <h4>Open Gardens Program</h4>
+                                <p>Visit beautiful community gardens</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">🌿</div>
+                            <div class="service-info">
+                                <h4>Greenhouse Tips & Advice</h4>
+                                <p>Optimize your growing environment</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">📸</div>
+                            <div class="service-info">
+                                <h4>Photography Competitions</h4>
+                                <p>Share your garden's beauty</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="services.html" class="btn btn-outline-light">Explore All Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">What Our Gardeners Say</h2>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-track">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-image-wrapper">
+                                <div class="testimonial-image" style="background-image: url('image/emma-green.webp');"></div>
+                            </div>
+                            <div class="testimonial-text">
+                                <blockquote>
+                                    "The Flourish box transformed my balcony into a vibrant garden sanctuary. The quality of seeds and the beautiful handmade soap make it feel like a gift every quarter!"
+                                </blockquote>
+                                <cite>Emma Richardson, London</cite>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-image-wrapper">
+                                <div class="testimonial-image" style="background-image: url('image/james-mitchell.jpg');"></div>
+                            </div>
+                            <div class="testimonial-text">
+                                <blockquote>
+                                    "As a beginner, the Oddbox has been perfect. I love supporting sustainability while learning to grow my own vegetables. The blog is incredibly helpful!"
+                                </blockquote>
+                                <cite>Marcus Chen, Auckland</cite>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-image-wrapper">
+                                <div class="testimonial-image" style="background-image: url('image/sophia-kumar.jpg');"></div>
+                            </div>
+                            <div class="testimonial-text">
+                                <blockquote>
+                                    "The Cottage box brings joy every month. My wildflower meadow is now home to dozens of butterflies and bees. The fact cards are educational and beautifully designed."
+                                </blockquote>
+                                <cite>Sophie van der Berg, Amsterdam</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn prev" onclick="changeTestimonial(-1)" aria-label="Previous testimonial">‹</button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" onclick="goToTestimonial(0)"></span>
+                        <span class="dot" onclick="goToTestimonial(1)"></span>
+                        <span class="dot" onclick="goToTestimonial(2)"></span>
+                    </div>
+                    <button class="testimonial-btn next" onclick="changeTestimonial(1)" aria-label="Next testimonial">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="cta-background"></div>
+        <div class="cta-content">
+            <h2 class="cta-title">Ready to Start Your Garden Journey?</h2>
+            <p class="cta-text">Join thousands of gardeners across Europe, Asia, and New Zealand who trust Gardens for their growing needs.</p>
+            <div class="cta-buttons">
+                <a href="products.html" class="btn btn-primary btn-large">Browse Boxes</a>
+                <a href="contact.html" class="btn btn-outline-light btn-large">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="8" fill="#fff"/>
+                            <path d="M12 28V20L16 16L20 20L24 16L28 20V28" stroke="#2C4A3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="16" cy="14" r="2" fill="#2C4A3E"/>
+                            <circle cx="24" cy="14" r="2" fill="#2C4A3E"/>
+                        </svg>
+                        <span class="logo-text">Gardens</span>
+                    </div>
+                    <p class="footer-tagline">Cultivating beauty across Europe, Asia, and New Zealand</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Our Boxes</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Accessibility Statement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 by Gardens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

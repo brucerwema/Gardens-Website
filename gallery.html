@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Gardens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/favicon.ico" sizes="any">
+<link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body class="gallery-page">
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#2C4A3E"/>
+                    <path d="M12 28V20L16 16L20 20L24 16L28 20V28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="16" cy="14" r="2" fill="white"/>
+                    <circle cx="24" cy="14" r="2" fill="white"/>
+                </svg>
+                <span class="logo-text">Gardens</span>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="products.html" class="nav-link">Boxes</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link btn-login">Log In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero gallery-hero">
+        <div class="page-hero-background"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <h1 class="page-hero-title">Garden Gallery</h1>
+            <p class="page-hero-subtitle">Inspiration from our community of gardeners</p>
+        </div>
+    </section>
+
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="vegetables">Vegetables</button>
+                <button class="filter-btn" data-filter="flowers">Flowers</button>
+                <button class="filter-btn" data-filter="gardens">Gardens</button>
+                <button class="filter-btn" data-filter="allotments">Allotments</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-grid-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="flowers">
+                    <img src="image/meadow.webp" alt="Beautiful wildflowers">
+                    <div class="gallery-overlay">
+                        <h4>Wildflower Meadow</h4>
+                        <p>Cottage Box Success</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="vegetables">
+                    <img src="gallery/b.webp" alt="Fresh vegetables">
+                    <div class="gallery-overlay">
+                        <h4>Harvest Time</h4>
+                        <p>Oddbox Garden</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="gardens">
+                    <img src="image/garden2.webp" alt="Lush garden">
+                    <div class="gallery-overlay">
+                        <h4>Garden Paradise</h4>
+                        <p>Member Showcase</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="flowers">
+                    <img src="image/summer.webp" alt="Colorful flowers">
+                    <div class="gallery-overlay">
+                        <h4>Summer Blooms</h4>
+                        <p>Flourish Subscriber</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="vegetables">
+                    <img src="image/tomato.webp" alt="Tomato plants">
+                    <div class="gallery-overlay">
+                        <h4>Tomato Bounty</h4>
+                        <p>Greenhouse Growing</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="gardens">
+                    <img src="image/garden3.webp" alt="Garden pathway">
+                    <div class="gallery-overlay">
+                        <h4>Garden Serenity</h4>
+                        <p>Open Gardens Program</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="allotments">
+                    <img src="image/allotment.webp" alt="Allotment">
+                    <div class="gallery-overlay">
+                        <h4>Productive Plot</h4>
+                        <p>Allotment Excellence</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="flowers">
+                    <img src="image/lavender.webp" alt="Purple flowers">
+                    <div class="gallery-overlay">
+                        <h4>Lavender Fields</h4>
+                        <p>Cottage Collection</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="vegetables">
+                    <img src="gallery/i.webp" alt="Garden vegetables">
+                    <div class="gallery-overlay">
+                        <h4>Kitchen Garden</h4>
+                        <p>Fresh From Plot</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="8" fill="#fff"/>
+                            <path d="M12 28V20L16 16L20 20L24 16L28 20V28" stroke="#2C4A3E" stroke-width="2"/>
+                            <circle cx="16" cy="14" r="2" fill="#2C4A3E"/>
+                            <circle cx="24" cy="14" r="2" fill="#2C4A3E"/>
+                        </svg>
+                        <span class="logo-text">Gardens</span>
+                    </div>
+                    <p class="footer-tagline">Cultivating beauty across Europe, Asia, and New Zealand</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Our Boxes</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Accessibility Statement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 by Gardens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

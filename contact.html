@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Gardens - Get in touch for gardening advice, subscription inquiries, or custom orders">
+    <title>Contact Us - Gardens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/favicon.ico" sizes="any">
+<link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body class="contact-page">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#2C4A3E"/>
+                    <path d="M12 28V20L16 16L20 20L24 16L28 20V28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="16" cy="14" r="2" fill="white"/>
+                    <circle cx="24" cy="14" r="2" fill="white"/>
+                </svg>
+                <span class="logo-text">Gardens</span>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="products.html" class="nav-link">Boxes</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="#" class="nav-link btn-login">Log In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero contact-hero">
+        <div class="page-hero-background"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <h1 class="page-hero-title">Get in Touch</h1>
+            <p class="page-hero-subtitle">We're here to help you grow</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Talk Gardening</h2>
+                    <p>Whether you have questions about our boxes, need gardening advice, or want to arrange a custom order, we'd love to hear from you.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>hello@gardens.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+250 788 123 456</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>Garden Plaza, Rwamagana<br>Eastern Province, Rwanda</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <h4>Office Hours</h4>
+                                <p>Monday - Friday: 8:00 - 17:00<br>Saturday: 9:00 - 13:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Our Journey</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook">Facebook</a>
+                            <a href="#" aria-label="Instagram">Instagram</a>
+                            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+250 788 123 456">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Please select...</option>
+                                <option value="subscription">Subscription Inquiry</option>
+                                <option value="custom">Custom Box Request</option>
+                                <option value="support">Customer Support</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span>Subscribe to our monthly gardening newsletter</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section - Global Offices -->
+    <section class="map-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #2C4A3E;">Our Global Locations</h2>
+            <p style="text-align: center; margin-bottom: 3rem; color: #666;">Gardens serves gardening enthusiasts across Europe, Asia, and New Zealand</p>
+        </div>
+        <div class="map-placeholder">
+            <div id="globalMap" style="width: 100%; height: 450px; background: #f5f5f5; position: relative;">
+                <svg width="100%" height="100%" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet" style="background: #e8f4f0;">
+                    <!-- Simple world map representation -->
+                    <defs>
+                        <style>
+                            .continent { fill: #9bc4b5; stroke: #2C4A3E; stroke-width: 1; }
+                            .marker { fill: #2C4A3E; }
+                            .marker-pulse { fill: #7FA992; opacity: 0.5; }
+                            .location-label { font-family: 'Crimson Pro', serif; font-size: 14px; fill: #2C4A3E; font-weight: 600; }
+                        </style>
+                    </defs>
+                    
+                    <!-- Simplified continents -->
+                    <!-- Europe -->
+                    <path class="continent" d="M 480 180 Q 520 160 560 180 Q 580 200 580 220 Q 570 250 540 260 Q 500 270 480 250 Q 460 230 480 180 Z"/>
+                    
+                    <!-- Asia -->
+                    <path class="continent" d="M 700 200 Q 800 180 880 200 Q 920 240 900 300 Q 860 340 800 330 Q 740 320 700 280 Q 680 240 700 200 Z"/>
+                    
+                    <!-- New Zealand -->
+                    <ellipse class="continent" cx="980" cy="460" rx="30" ry="60"/>
+                    
+                    <!-- Office markers with pulse effect -->
+                    <!-- London, UK -->
+                    <g class="office-marker">
+                        <circle class="marker-pulse" cx="520" cy="220" r="20">
+                            <animate attributeName="r" from="10" to="25" dur="2s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" from="0.5" to="0" dur="2s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle class="marker" cx="520" cy="220" r="8"/>
+                        <text class="location-label" x="520" y="205" text-anchor="middle">London, UK</text>
+                    </g>
+                    
+                    <!-- Singapore -->
+                    <g class="office-marker">
+                        <circle class="marker-pulse" cx="820" cy="310" r="20">
+                            <animate attributeName="r" from="10" to="25" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" from="0.5" to="0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle class="marker" cx="820" cy="310" r="8"/>
+                        <text class="location-label" x="820" y="295" text-anchor="middle">Singapore</text>
+                    </g>
+                    
+                    <!-- Auckland, NZ -->
+                    <g class="office-marker">
+                        <circle class="marker-pulse" cx="980" cy="460" r="20">
+                            <animate attributeName="r" from="10" to="25" dur="2s" begin="1s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" from="0.5" to="0" dur="2s" begin="1s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle class="marker" cx="980" cy="460" r="8"/>
+                        <text class="location-label" x="980" y="445" text-anchor="middle">Auckland, NZ</text>
+                    </g>
+                    
+                    <!-- Connection lines -->
+                    <line x1="520" y1="220" x2="820" y2="310" stroke="#2C4A3E" stroke-width="1" stroke-dasharray="5,5" opacity="0.3"/>
+                    <line x1="820" y1="310" x2="980" y2="460" stroke="#2C4A3E" stroke-width="1" stroke-dasharray="5,5" opacity="0.3"/>
+                </svg>
+                
+                <!-- Office details cards -->
+                <div style="display: flex; justify-content: space-around; padding: 2rem; background: white; flex-wrap: wrap; gap: 1rem;">
+                    <div style="text-align: center; padding: 1rem; flex: 1; min-width: 200px;">
+                        <h4 style="color: #2C4A3E; margin-bottom: 0.5rem;">🇬🇧 European Office</h4>
+                        <p style="color: #666; font-size: 14px; margin: 0;">London, United Kingdom</p>
+                        <p style="color: #666; font-size: 14px; margin: 0;">gardens.uk@gardens.com</p>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; flex: 1; min-width: 200px;">
+                        <h4 style="color: #2C4A3E; margin-bottom: 0.5rem;">🇸🇬 Asian Office</h4>
+                        <p style="color: #666; font-size: 14px; margin: 0;">Singapore</p>
+                        <p style="color: #666; font-size: 14px; margin: 0;">gardens.asia@gardens.com</p>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; flex: 1; min-width: 200px;">
+                        <h4 style="color: #2C4A3E; margin-bottom: 0.5rem;">🇳🇿 New Zealand Office</h4>
+                        <p style="color: #666; font-size: 14px; margin: 0;">Auckland, New Zealand</p>
+                        <p style="color: #666; font-size: 14px; margin: 0;">gardens.nz@gardens.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="8" fill="#fff"/>
+                            <path d="M12 28V20L16 16L20 20L24 16L28 20V28" stroke="#2C4A3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="16" cy="14" r="2" fill="#2C4A3E"/>
+                            <circle cx="24" cy="14" r="2" fill="#2C4A3E"/>
+                        </svg>
+                        <span class="logo-text">Gardens</span>
+                    </div>
+                    <p class="footer-tagline">Cultivating beauty in Rwanda and beyond</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Our Boxes</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Accessibility Statement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 by Gardens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

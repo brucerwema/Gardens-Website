@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Gardens' curated gardening boxes - Oddbox, Flourish, and Cottage subscriptions">
+    <title>Our Boxes - Gardens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="image/favicon.ico" sizes="any">
+<link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body class="products-page">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <rect width="40" height="40" rx="8" fill="#2C4A3E"/>
+                    <path d="M12 28V20L16 16L20 20L24 16L28 20V28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="16" cy="14" r="2" fill="white"/>
+                    <circle cx="24" cy="14" r="2" fill="white"/>
+                </svg>
+                <span class="logo-text">Gardens</span>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="products.html" class="nav-link active">Boxes</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link btn-login">Log In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero products-hero">
+        <div class="page-hero-background"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <h1 class="page-hero-title">Grow with Us</h1>
+            <p class="page-hero-subtitle">Curated gardening boxes for every lifestyle and skill level</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-detail">
+        <div class="container">
+            <!-- Oddbox -->
+            <article id="oddbox" class="product-detail">
+                <div class="product-images">
+                    <div class="product-image-main">
+                        <img src="product/a.webp" alt="Fresh wonky vegetables">
+                    </div>
+                    <div class="product-image-grid">
+                        <img src="product/b.webp" alt="Vegetable seeds">
+                        <img src="product/c.webp" alt="Fresh produce">
+                        <img src="product/d.webp" alt="Garden vegetables">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-badge">Weekly Delivery</span>
+                    <h2 class="product-title">Oddbox</h2>
+                    <p class="product-price"><span class="currency">£</span>18 <span class="period">per week</span></p>
+                    <p class="product-description">Join the fight against food waste with our Oddbox subscription. Receive perfectly delicious wonky vegetables rejected by supermarkets for cosmetic reasons, along with vegetable seeds and exclusive access to our growing blog.</p>
+                    
+                    <h4>What's Included:</h4>
+                    <ul class="product-features-detailed">
+                        <li>5-7kg of seasonal wonky vegetables weekly</li>
+                        <li>Variety pack of vegetable seeds each month</li>
+                        <li>Access to exclusive blog with recipes and tips</li>
+                        <li>Growing guides tailored to your region</li>
+                        <li>Member discounts on gardening supplies</li>
+                    </ul>
+
+                    <h4>Perfect For:</h4>
+                    <p>Eco-conscious households wanting fresh produce while reducing food waste. Ideal for beginners learning to grow vegetables from seed.</p>
+
+                    <table class="product-specs">
+                        <tr>
+                            <th>Delivery Frequency</th>
+                            <td>Weekly</td>
+                        </tr>
+                        <tr>
+                            <th>Minimum Commitment</th>
+                            <td>4 weeks</td>
+                        </tr>
+                        <tr>
+                            <th>Shipping</th>
+                            <td>Free across Europe, NZ, Asia</td>
+                        </tr>
+                        <tr>
+                            <th>Cancellation</th>
+                            <td>Anytime after minimum</td>
+                        </tr>
+                    </table>
+
+                    <a href="contact.html" class="btn btn-primary btn-large">Subscribe to Oddbox</a>
+                </div>
+            </article>
+
+            <!-- Flourish -->
+            <article id="flourish" class="product-detail reverse">
+                <div class="product-images">
+                    <div class="product-image-main">
+                        <img src="product/e.webp" alt="Gardening tools and seeds">
+                    </div>
+                    <div class="product-image-grid">
+                        <img src="product/f.webp" alt="Seed trays">
+                        <img src="product/g.webp" alt="Watering can">
+                        <img src="image/soap.webp" alt="Natural soap">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-badge best-value">Best Value - Quarterly</span>
+                    <h2 class="product-title">Flourish</h2>
+                    <p class="product-price"><span class="currency">£</span>62 <span class="period">per quarter</span></p>
+                    <p class="product-description">Our most popular box, Flourish brings you seasonal gardening essentials four times a year. Each box is thoughtfully curated with premium seeds, professional-grade tools, and artisan products.</p>
+                    
+                    <h4>What's Included:</h4>
+                    <ul class="product-features-detailed">
+                        <li>Selection of 10-15 seasonal seed varieties</li>
+                        <li>Professional biodegradable seed trays</li>
+                        <li>Copper watering can (Spring box only)</li>
+                        <li>Handmade cruelty-free gardening soap</li>
+                        <li>Quarterly magazine with expert advice</li>
+                        <li>Access to live online workshops</li>
+                    </ul>
+
+                    <h4>Perfect For:</h4>
+                    <p>Dedicated gardeners who appreciate quality tools and sustainable products. Excellent gift option for nature lovers.</p>
+
+                    <table class="product-specs">
+                        <tr>
+                            <th>Delivery Frequency</th>
+                            <td>Quarterly (4x per year)</td>
+                        </tr>
+                        <tr>
+                            <th>Minimum Commitment</th>
+                            <td>1 year (4 boxes)</td>
+                        </tr>
+                        <tr>
+                            <th>Shipping</th>
+                            <td>Free across Europe, NZ, Asia</td>
+                        </tr>
+                        <tr>
+                            <th>Cancellation</th>
+                            <td>After 1 year, anytime</td>
+                        </tr>
+                    </table>
+
+                    <a href="contact.html" class="btn btn-primary btn-large">Subscribe to Flourish</a>
+                </div>
+            </article>
+
+            <!-- Cottage -->
+            <article id="cottage" class="product-detail">
+                <div class="product-images">
+                    <div class="product-image-main">
+                        <img src="image/thebegining.webp" alt="Wildflower meadow">
+                    </div>
+                    <div class="product-image-grid">
+                        <img src="image/seed.webp" alt="Wildflower seeds">
+                        <img src="product/k.webp" alt="Garden markers">
+                        <img src="image/twine.webp" alt="Garden twine">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <span class="product-badge">Monthly Delivery</span>
+                    <h2 class="product-title">Cottage</h2>
+                    <p class="product-price"><span class="currency">£</span>35 <span class="period">per month</span></p>
+                    <p class="product-description">Create your own cottage garden paradise with monthly deliveries of native wildflower seeds, educational materials, and charming garden accessories.</p>
+                    
+                    <h4>What's Included:</h4>
+                    <ul class="product-features-detailed">
+                        <li>5-8 varieties of seasonal wildflower seeds</li>
+                        <li>Beautiful illustrated fact cards</li>
+                        <li>Handcrafted bamboo seed markers</li>
+                        <li>Natural jute garden twine</li>
+                        <li>Pollinator identification guide</li>
+                        <li>Monthly newsletter with sowing calendar</li>
+                    </ul>
+
+                    <h4>Perfect For:</h4>
+                    <p>Nature enthusiasts wanting to support pollinators and create beautiful wildlife-friendly gardens. Great for those with larger outdoor spaces.</p>
+
+                    <table class="product-specs">
+                        <tr>
+                            <th>Delivery Frequency</th>
+                            <td>Monthly</td>
+                        </tr>
+                        <tr>
+                            <th>Minimum Commitment</th>
+                            <td>3 months</td>
+                        </tr>
+                        <tr>
+                            <th>Shipping</th>
+                            <td>Free across Europe, NZ, Asia</td>
+                        </tr>
+                        <tr>
+                            <th>Cancellation</th>
+                            <td>Anytime after 3 months</td>
+                        </tr>
+                    </table>
+
+                    <a href="contact.html" class="btn btn-primary btn-large">Subscribe to Cottage</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Custom Boxes Section -->
+    <section class="custom-boxes">
+        <div class="container">
+            <div class="custom-content">
+                <h2>Need a Custom Solution?</h2>
+                <p>We create bespoke gardening boxes for corporate gifts, events, and special occasions. Our team works with you to design the perfect package that reflects your values and delights recipients.</p>
+                <ul class="custom-features">
+                    <li>Custom branding and packaging</li>
+                    <li>Flexible quantities from 10 to 10,000+</li>
+                    <li>Tailored content based on your preferences</li>
+                    <li>Bulk pricing available</li>
+                </ul>
+                <a href="contact.html" class="btn btn-outline">Request Custom Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">Compare Our Boxes</h2>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Oddbox</th>
+                            <th>Flourish</th>
+                            <th>Cottage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Price</td>
+                            <td>£18/week</td>
+                            <td>£62/quarter</td>
+                            <td>£35/month</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery Frequency</td>
+                            <td>Weekly</td>
+                            <td>Quarterly</td>
+                            <td>Monthly</td>
+                        </tr>
+                        <tr>
+                            <td>Seeds Included</td>
+                            <td>✓</td>
+                            <td>✓✓✓</td>
+                            <td>✓✓</td>
+                        </tr>
+                        <tr>
+                            <td>Fresh Produce</td>
+                            <td>✓✓✓</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Tools & Accessories</td>
+                            <td>—</td>
+                            <td>✓✓✓</td>
+                            <td>✓✓</td>
+                        </tr>
+                        <tr>
+                            <td>Educational Materials</td>
+                            <td>Blog Access</td>
+                            <td>Magazine + Workshops</td>
+                            <td>Fact Cards</td>
+                        </tr>
+                        <tr>
+                            <td>Best For</td>
+                            <td>Beginners</td>
+                            <td>Enthusiasts</td>
+                            <td>Wildflower Lovers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-background"></div>
+        <div class="cta-content">
+            <h2 class="cta-title">Still Unsure Which Box to Choose?</h2>
+            <p class="cta-text">Our team is happy to help you find the perfect subscription for your gardening goals</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Get Personalized Advice</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="8" fill="#fff"/>
+                            <path d="M12 28V20L16 16L20 20L24 16L28 20V28" stroke="#2C4A3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="16" cy="14" r="2" fill="#2C4A3E"/>
+                            <circle cx="24" cy="14" r="2" fill="#2C4A3E"/>
+                        </svg>
+                        <span class="logo-text">Gardens</span>
+                    </div>
+                    <p class="footer-tagline">Cultivating beauty across Europe, Asia, and New Zealand</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Our Boxes</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Accessibility Statement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 by Gardens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
